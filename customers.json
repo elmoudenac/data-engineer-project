@@ -1,5 +1,15 @@
 {
-  "customer_id": "CS3456789",
-  "emails": ["example@example.com"],
-  "phone_numbers": ["+33630896746"]
+  "items": [
+    {
+      "customer_id": "CS3456789",
+      "emails": ["example1@example.com"],
+      "phone_numbers": ["+33630896746", "06.89.56.90.45"]
+    },
+    {
+      "customer_id": "CS1234567",
+      "emails": ["example2@example.com"],
+      "phone_numbers": ["+33630987654", "06.12.34.56.78"]
+    }
+  ],
+  "total_items": 2
 }

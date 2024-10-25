@@ -1,5 +1,17 @@
 {
-  "product_sku": "SKU23456787654",
-  "description": "Sample product",
-  "unit_amount": 100.50
+  "items": [
+    {
+      "product_sku": "SKU23456787654",
+      "description": "Product description 1",
+      "unit_amount": 65.2,
+      "supplier": "Supplier A"
+    },
+    {
+      "product_sku": "SKU56789654321",
+      "description": "Product description 2",
+      "unit_amount": 89.9,
+      "supplier": "Supplier B"
+    }
+  ],
+  "total_items": 2
 }

@@ -1,20 +1,17 @@
-from api_handler import read_data_from_file
+from api_handler import fetch_data_from_api
 from storage_handler import upload_to_bucket
 
 if __name__ == "__main__":
     bucket_name = 'gcs-dp-stacklabs-retail-api'
 
-    # Lecture et upload des données Products
+    all_products_data = fetch_data_from_api('products', limit=250)
     products_filename = 'products.json'
-    products_data = read_data_from_file(products_filename)
     upload_to_bucket(bucket_name, 'products', products_filename)
 
-    # Lecture et upload des données Sales
+    all_sales_data = fetch_data_from_api('sales', start_id=764)
     sales_filename = 'sales.json'
-    sales_data = read_data_from_file(sales_filename)
     upload_to_bucket(bucket_name, 'sales', sales_filename)
 
-    # Lecture et upload des données Customers
+    all_customers_data = fetch_data_from_api('customers', limit=250)
     customers_filename = 'customers.json'
-    customers_data = read_data_from_file(customers_filename)
     upload_to_bucket(bucket_name, 'customers', customers_filename)
