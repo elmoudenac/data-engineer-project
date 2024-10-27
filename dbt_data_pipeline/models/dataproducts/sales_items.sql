@@ -4,7 +4,6 @@
         materialized='incremental',
         schema='dataproducts',
         unique_key='pk',
-        incremental_strategy='insert_overwrite',
         partition_by={
             'field': 'sales_datetime',
             'data_type': 'timestamp'

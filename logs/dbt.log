@@ -5665,3 +5665,1607 @@ There are 1 unused configuration paths:
 [0m11:40:08.212813 [debug] [MainThread]: Command `dbt run` succeeded at 11:40:08.212813 after 15.45 seconds
 [0m11:40:08.212813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EEB9300B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EEC3149A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002EEB9717AA0>]}
 [0m11:40:08.212813 [debug] [MainThread]: Flushing usage events
+[0m19:06:52.514223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A73D7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014057F8EE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A8BB1A0>]}
+
+
+============================== 19:06:52.529846 | 874b9ba9-772b-485e-a897-b98163f437a6 ==============================
+[0m19:06:52.529846 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:06:52.529846 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:/Users/lenovo/.dbt', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir C:/Users/lenovo/.dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:06:58.762298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A6AE570>]}
+[0m19:06:59.281652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014062CC53A0>]}
+[0m19:06:59.291743 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:06:59.352762 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:07:01.401170 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:07:01.401170 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:07:01.416802 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:07:01.501487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065794D40>]}
+[0m19:07:01.887005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065DA44A0>]}
+[0m19:07:01.887005 [info ] [MainThread]: Found 6 models, 4 data tests, 3 sources, 484 macros
+[0m19:07:01.887005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A9E7EC0>]}
+[0m19:07:01.887005 [info ] [MainThread]: 
+[0m19:07:01.887005 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:07:01.887005 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:07:01.902646 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:07:04.810512 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:04.995262 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:05.142461 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609, now create_dataengineerproject-439609_dp)
+[0m19:07:05.142461 [debug] [ThreadPool]: Creating schema "database: "dataengineerproject-439609"
+schema: "dp"
+"
+[0m19:07:05.157691 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:05.157691 [debug] [ThreadPool]: On create_dataengineerproject-439609_dp: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "connection_name": "create_dataengineerproject-439609_dp"} */
+create schema if not exists `dataengineerproject-439609`.`dp`
+  
+[0m19:07:05.396128 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:938bc9b8-4293-4133-83cd-d5a050377ede&page=queryresults
+[0m19:07:06.877681 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp'
+[0m19:07:06.877681 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:07:07.031699 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp, now list_dataengineerproject-439609_dp_dataproducts)
+[0m19:07:07.031699 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:07.147241 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m19:07:07.147241 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:07:07.263618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065D7EA80>]}
+[0m19:07:07.263618 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:07:07.263618 [info ] [MainThread]: 
+[0m19:07:07.278593 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.customers_staging
+[0m19:07:07.278593 [info ] [Thread-1 (]: 1 of 6 START sql view model dp_hub.customers_staging ........................... [RUN]
+[0m19:07:07.278593 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.customers_staging'
+[0m19:07:07.278593 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.customers_staging
+[0m19:07:07.294236 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.customers_staging"
+[0m19:07:07.294236 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.customers_staging
+[0m19:07:07.316401 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.customers_staging"
+[0m19:07:07.332023 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:07:07.332023 [debug] [Thread-1 (]: On model.dbt_data_pipeline.customers_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.customers_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`customers_staging`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH standardized_customers AS (
+    SELECT
+        *,
+        -- Normalisation des numéros de téléphone
+        ARRAY(
+            SELECT
+                CASE
+                    WHEN REGEXP_CONTAINS(phone_number, r'^\+33') THEN phone_number
+                    WHEN REGEXP_CONTAINS(phone_number, r'^0') THEN '+33' || SUBSTR(REGEXP_REPLACE(phone_number, r'\D', ''), 2)  -- Remplacer 0 par +33
+                    ELSE phone_number  -- Pour tout autre format, garder tel quel (potentiellement à adapter pour d'autres cas)
+                END AS standardized_phone_number
+            FROM UNNEST(phone_numbers) AS phone_number
+        ) AS standardized_phone_numbers,
+
+        -- Normalisation des adresses e-mail (en minuscules pour consistance)
+        ARRAY(
+            SELECT LOWER(email)
+            FROM UNNEST(emails) AS email
+        ) AS standardized_emails
+    FROM `dataengineerproject-439609`.`dp_lake`.`customers_normalized`
+),
+
+ranked_customers AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY customer_id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM standardized_customers
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    customer_id,
+    standardized_emails AS emails,
+    standardized_phone_numbers AS phone_numbers
+
+FROM
+    ranked_customers
+WHERE
+    row_num = 1;
+
+
+[0m19:07:07.564272 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:fc4dab61-65d8-4331-a5aa-5f5b6f71a33a&page=queryresults
+[0m19:07:07.817239 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065E43F50>]}
+[0m19:07:07.817239 [info ] [Thread-1 (]: 1 of 6 OK created sql view model dp_hub.customers_staging ...................... [[32mCREATE VIEW (0 processed)[0m in 0.54s]
+[0m19:07:07.817239 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.customers_staging
+[0m19:07:07.817239 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.my_first_dbt_model
+[0m19:07:07.817239 [info ] [Thread-1 (]: 2 of 6 START sql table model dp.my_first_dbt_model ............................. [RUN]
+[0m19:07:07.817239 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.customers_staging, now model.dbt_data_pipeline.my_first_dbt_model)
+[0m19:07:07.817239 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.my_first_dbt_model
+[0m19:07:07.832864 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.my_first_dbt_model"
+[0m19:07:07.832864 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.my_first_dbt_model
+[0m19:07:07.864175 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.my_first_dbt_model"
+[0m19:07:07.864175 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:07.864175 [debug] [Thread-1 (]: On model.dbt_data_pipeline.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp`.`my_first_dbt_model`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m19:07:08.166234 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:2c9d96d0-1fbe-4547-99e2-e8887236d21f&page=queryresults
+[0m19:07:10.571377 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065B5FA70>]}
+[0m19:07:10.571377 [info ] [Thread-1 (]: 2 of 6 OK created sql table model dp.my_first_dbt_model ........................ [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.75s]
+[0m19:07:10.586346 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.my_first_dbt_model
+[0m19:07:10.586346 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.products_staging
+[0m19:07:10.586346 [info ] [Thread-1 (]: 3 of 6 START sql view model dp_hub.products_staging ............................ [RUN]
+[0m19:07:10.586346 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.my_first_dbt_model, now model.dbt_data_pipeline.products_staging)
+[0m19:07:10.586346 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.products_staging
+[0m19:07:10.586346 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.products_staging"
+[0m19:07:10.586346 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.products_staging
+[0m19:07:10.586346 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.products_staging"
+[0m19:07:10.586346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:10.602001 [debug] [Thread-1 (]: On model.dbt_data_pipeline.products_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.products_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`products_staging`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH ranked_products AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY product_sku
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`products_normalized`
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    product_sku,
+    unit_amount,
+    description AS product_description,
+    supplier
+
+FROM
+    ranked_products
+WHERE
+    row_num = 1;
+
+
+[0m19:07:10.856214 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:ca398cbe-75c2-4aab-8fd6-f27bdb6a51b3&page=queryresults
+[0m19:07:11.040513 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065ED8260>]}
+[0m19:07:11.040513 [info ] [Thread-1 (]: 3 of 6 OK created sql view model dp_hub.products_staging ....................... [[32mCREATE VIEW (0 processed)[0m in 0.45s]
+[0m19:07:11.040513 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.products_staging
+[0m19:07:11.040513 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_staging
+[0m19:07:11.040513 [info ] [Thread-1 (]: 4 of 6 START sql view model dp_hub.sales_staging ............................... [RUN]
+[0m19:07:11.040513 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.products_staging, now model.dbt_data_pipeline.sales_staging)
+[0m19:07:11.040513 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_staging
+[0m19:07:11.056098 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_staging"
+[0m19:07:11.056098 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_staging
+[0m19:07:11.056098 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_staging"
+[0m19:07:11.071721 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:11.071721 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`sales_staging`
+  OPTIONS()
+  as -- Tag to indicate that this model is updated every hour
+
+
+WITH ranked_sales AS (
+    -- Assign a row number to each sale based on customer_id and timestamp, to keep the most recent entry
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`sales_normalized`
+),
+
+-- Filter to only include the most recent entry for each sale (i.e., row_num = 1)
+deduplicated_sales AS (
+    SELECT *
+    FROM ranked_sales
+    WHERE row_num = 1
+)
+
+-- Flatten items array for each sale and select relevant fields
+SELECT
+    ds._dp_ingestion_timestamp,
+    ds.id,
+    ds.datetime AS sales_datetime,
+    ds.customer_id,
+    ds.total_amount,
+    item.amount AS item_amount,
+    item.quantity AS item_quantity,
+    item.product_sku AS item_product_sku
+FROM
+    deduplicated_sales AS ds,
+    UNNEST(ds.items) AS item;
+
+
+[0m19:07:11.326005 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:20ff7f10-84d3-42d6-a5b2-1c4fcefaef63&page=queryresults
+[0m19:07:11.488721 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065EEDA30>]}
+[0m19:07:11.488721 [info ] [Thread-1 (]: 4 of 6 OK created sql view model dp_hub.sales_staging .......................... [[32mCREATE VIEW (0 processed)[0m in 0.45s]
+[0m19:07:11.488721 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_staging
+[0m19:07:11.488721 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.my_second_dbt_model
+[0m19:07:11.488721 [info ] [Thread-1 (]: 5 of 6 START sql view model dp.my_second_dbt_model ............................. [RUN]
+[0m19:07:11.488721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.sales_staging, now model.dbt_data_pipeline.my_second_dbt_model)
+[0m19:07:11.488721 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.my_second_dbt_model
+[0m19:07:11.503736 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.my_second_dbt_model"
+[0m19:07:11.503736 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.my_second_dbt_model
+[0m19:07:11.588479 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.my_second_dbt_model"
+[0m19:07:11.588479 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:11.588479 [debug] [Thread-1 (]: On model.dbt_data_pipeline.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.my_second_dbt_model"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `dataengineerproject-439609`.`dp`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m19:07:11.842775 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:d98de578-775a-4d82-ac31-ca74ca81213f&page=queryresults
+[0m19:07:12.058354 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065D76870>]}
+[0m19:07:12.058354 [info ] [Thread-1 (]: 5 of 6 OK created sql view model dp.my_second_dbt_model ........................ [[32mCREATE VIEW (0 processed)[0m in 0.57s]
+[0m19:07:12.058354 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.my_second_dbt_model
+[0m19:07:12.058354 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:07:12.058354 [info ] [Thread-1 (]: 6 of 6 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:07:12.058354 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.my_second_dbt_model, now model.dbt_data_pipeline.sales_items)
+[0m19:07:12.058354 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:07:12.058354 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:07:12.074011 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:07:12.111765 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:07:12.290200 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:07:12.290200 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:07:12.359838 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:8ab9e53d-3beb-4c67-aded-0988f8f6df13&page=queryresults
+[0m19:07:16.168286 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/8ab9e53d-3beb-4c67-aded-0988f8f6df13?maxResults=0&location=europe-west9&prettyPrint=false: Query error: Cannot coerce expression (\n          select as struct\n              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null\n              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)\n          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`\n      ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]')
+[0m19:07:16.899904 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:afe523d5-b0f3-4e68-b199-eb33d4c1cd28&page=queryresults
+[0m19:07:20.078452 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:afe523d5-b0f3-4e68-b199-eb33d4c1cd28&page=queryresults
+[0m19:07:20.293908 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:07:20.293908 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '874b9ba9-772b-485e-a897-b98163f437a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065E5F140>]}
+[0m19:07:20.293908 [error] [Thread-1 (]: 6 of 6 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 8.24s]
+[0m19:07:20.293908 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:07:20.293908 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:07:20.309427 [debug] [MainThread]: Connection 'create_dataengineerproject-439609_dp' was properly closed.
+[0m19:07:20.309427 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m19:07:20.309427 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:07:20.309427 [info ] [MainThread]: 
+[0m19:07:20.309427 [info ] [MainThread]: Finished running 4 view models, 1 table model, 1 incremental model in 0 hours 0 minutes and 18.42 seconds (18.42s).
+[0m19:07:20.309427 [debug] [MainThread]: Command end result
+[0m19:07:20.362829 [info ] [MainThread]: 
+[0m19:07:20.378484 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:07:20.378484 [info ] [MainThread]: 
+[0m19:07:20.378484 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:07:20.378484 [info ] [MainThread]: 
+[0m19:07:20.378484 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m19:07:20.378484 [debug] [MainThread]: Command `dbt run` failed at 19:07:20.378484 after 28.35 seconds
+[0m19:07:20.394072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A8FB0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001405A0550D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014065BF2240>]}
+[0m19:07:20.394072 [debug] [MainThread]: Flushing usage events
+[0m19:08:48.977977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD7874440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD77291F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD772ABA0>]}
+
+
+============================== 19:08:48.993660 | da54ed53-bd48-4cee-9b55-377324a621f7 ==============================
+[0m19:08:48.993660 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:08:48.993660 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run -s sales_items.sql', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:08:53.462631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE0A47800>]}
+[0m19:08:53.562929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE24F1D90>]}
+[0m19:08:53.562929 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:08:53.578573 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:08:54.041938 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m19:08:54.041938 [debug] [MainThread]: Partial parsing: deleted file: dbt_data_pipeline://dbt_data_pipeline/models\example\my_first_dbt_model.sql
+[0m19:08:54.041938 [debug] [MainThread]: Partial parsing: deleted file: dbt_data_pipeline://dbt_data_pipeline/models\example\my_second_dbt_model.sql
+[0m19:08:54.142194 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:08:54.164338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD79FE120>]}
+[0m19:08:54.429182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE2557890>]}
+[0m19:08:54.439430 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:08:54.439430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE25840E0>]}
+[0m19:08:54.447485 [info ] [MainThread]: 
+[0m19:08:54.449522 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:08:54.449522 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:08:54.449522 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:08:57.807354 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_dataproducts'
+[0m19:08:57.807354 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:08:57.961505 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m19:08:57.961505 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:08:58.076797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE2619610>]}
+[0m19:08:58.076797 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:08:58.076797 [info ] [MainThread]: 
+[0m19:08:58.092425 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:08:58.092425 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:08:58.092425 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:08:58.092425 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:08:58.114568 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:08:58.114568 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:08:58.230503 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:08:58.576721 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:08:58.599128 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:08:58.737214 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:e5c28523-90af-4ccd-9aba-f97ee99cafc8&page=queryresults
+[0m19:09:01.127087 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/e5c28523-90af-4ccd-9aba-f97ee99cafc8?maxResults=0&location=europe-west9&prettyPrint=false: Query error: Cannot coerce expression (\n          select as struct\n              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null\n              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)\n          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`\n      ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]')
+[0m19:09:02.041863 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:30ae89b0-d66b-4dff-bd50-56aba3bf5ac4&page=queryresults
+[0m19:09:04.962114 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:30ae89b0-d66b-4dff-bd50-56aba3bf5ac4&page=queryresults
+[0m19:09:05.034875 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:09:05.041872 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'da54ed53-bd48-4cee-9b55-377324a621f7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE2845100>]}
+[0m19:09:05.045876 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 6.94s]
+[0m19:09:05.048881 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:09:05.054901 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:09:05.054901 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:09:05.054901 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m19:09:05.054901 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:09:05.054901 [info ] [MainThread]: 
+[0m19:09:05.054901 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 10.61 seconds (10.61s).
+[0m19:09:05.054901 [debug] [MainThread]: Command end result
+[0m19:09:05.327790 [info ] [MainThread]: 
+[0m19:09:05.327790 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:09:05.327790 [info ] [MainThread]: 
+[0m19:09:05.327790 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:09:05.327790 [info ] [MainThread]: 
+[0m19:09:05.338010 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:09:05.348076 [debug] [MainThread]: Command `dbt run` failed at 19:09:05.348076 after 16.80 seconds
+[0m19:09:05.348076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD40C05C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD6EC7500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AD6EC6C60>]}
+[0m19:09:05.348076 [debug] [MainThread]: Flushing usage events
+[0m19:09:49.386913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268FF83920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269010A840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269010A930>]}
+
+
+============================== 19:09:49.386913 | 6e0c6b12-78b6-44d5-9b30-3236a582db13 ==============================
+[0m19:09:49.386913 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:09:49.386913 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run -s sales_items.sql', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:09:53.228639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000226900033E0>]}
+[0m19:09:53.297696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268DC35BE0>]}
+[0m19:09:53.297696 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:09:53.313320 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:09:53.752306 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:09:53.767931 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:09:54.099709 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:09:54.115333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269AD172F0>]}
+[0m19:09:54.300315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269B0003B0>]}
+[0m19:09:54.300315 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:09:54.300315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269AC83FE0>]}
+[0m19:09:54.300315 [info ] [MainThread]: 
+[0m19:09:54.300315 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:09:54.300315 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:09:54.300315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:09:57.145780 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_dataproducts'
+[0m19:09:57.145780 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:09:57.262482 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m19:09:57.262482 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:09:57.362394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002269ADF91C0>]}
+[0m19:09:57.377405 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:09:57.377405 [info ] [MainThread]: 
+[0m19:09:57.377405 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:09:57.377405 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:09:57.377405 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:09:57.377405 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:09:57.393059 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:09:57.393059 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:09:57.540232 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:09:57.762650 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:09:57.762650 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:09:57.894866 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:8eeed7a0-e417-48f4-9855-2f94d5371596&page=queryresults
+[0m19:10:00.486250 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/8eeed7a0-e417-48f4-9855-2f94d5371596?maxResults=0&location=europe-west9&prettyPrint=false: Query error: Cannot coerce expression (\n          select as struct\n              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null\n              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)\n          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`\n      ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]')
+[0m19:10:01.134983 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:c646f348-5afe-4a67-9605-24e6a83e5306&page=queryresults
+[0m19:10:04.013375 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:c646f348-5afe-4a67-9605-24e6a83e5306&page=queryresults
+[0m19:10:04.035475 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:10:04.035475 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6e0c6b12-78b6-44d5-9b30-3236a582db13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268F843C20>]}
+[0m19:10:04.051165 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 6.66s]
+[0m19:10:04.051165 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:10:04.051165 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:10:04.051165 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:10:04.051165 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m19:10:04.051165 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:10:04.051165 [info ] [MainThread]: 
+[0m19:10:04.051165 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 9.75 seconds (9.75s).
+[0m19:10:04.066746 [debug] [MainThread]: Command end result
+[0m19:10:04.113628 [info ] [MainThread]: 
+[0m19:10:04.129260 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:10:04.129260 [info ] [MainThread]: 
+[0m19:10:04.129260 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [41:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:10:04.135794 [info ] [MainThread]: 
+[0m19:10:04.135794 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:10:04.135794 [debug] [MainThread]: Command `dbt run` failed at 19:10:04.135794 after 15.14 seconds
+[0m19:10:04.135794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268FE94140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268FE05DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002268FF00AA0>]}
+[0m19:10:04.135794 [debug] [MainThread]: Flushing usage events
+[0m19:15:44.873644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2AF33C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2A0B0500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2D864BC0>]}
+
+
+============================== 19:15:44.889527 | 1e350ca1-8493-4ffd-a4c6-e41ee846253e ==============================
+[0m19:15:44.889527 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:15:44.889527 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run -s sales_items.sql', 'send_anonymous_usage_stats': 'True'}
+[0m19:15:49.068468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3837AC30>]}
+[0m19:15:49.168329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C37B24C20>]}
+[0m19:15:49.168329 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:15:49.183992 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:15:49.553631 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:15:49.553631 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:15:49.870209 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:15:49.892340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3883EF30>]}
+[0m19:15:50.070480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C387E81D0>]}
+[0m19:15:50.070480 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:15:50.070480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C38479640>]}
+[0m19:15:50.070480 [info ] [MainThread]: 
+[0m19:15:50.070480 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:15:50.070480 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:15:50.070480 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:53.235313 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_dataproducts'
+[0m19:15:53.235313 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:15:53.366903 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m19:15:53.366903 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:15:53.536208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C388394C0>]}
+[0m19:15:53.536208 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:15:53.536208 [info ] [MainThread]: 
+[0m19:15:53.536208 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:15:53.551848 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:15:53.551848 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:15:53.551848 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:15:53.567477 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:15:53.583101 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:15:53.768088 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:15:53.984291 [debug] [Thread-1 (]: Compilation Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  The 'insert_overwrite' strategy requires the `partition_by` config.
+  
+  > in macro bq_generate_incremental_insert_overwrite_build_sql (macros\materializations\incremental_strategy\insert_overwrite.sql)
+  > called by macro bq_generate_incremental_build_sql (macros\materializations\incremental.sql)
+  > called by macro materialization_incremental_bigquery (macros\materializations\incremental.sql)
+  > called by model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+[0m19:15:53.984291 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e350ca1-8493-4ffd-a4c6-e41ee846253e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2D103BC0>]}
+[0m19:15:53.984291 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 0.43s]
+[0m19:15:53.984291 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:15:53.999913 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:15:53.999913 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:15:53.999913 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m19:15:53.999913 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:15:53.999913 [info ] [MainThread]: 
+[0m19:15:53.999913 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 3.93 seconds (3.93s).
+[0m19:15:53.999913 [debug] [MainThread]: Command end result
+[0m19:15:54.053331 [info ] [MainThread]: 
+[0m19:15:54.053331 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:15:54.053331 [info ] [MainThread]: 
+[0m19:15:54.053331 [error] [MainThread]:   Compilation Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  The 'insert_overwrite' strategy requires the `partition_by` config.
+  
+  > in macro bq_generate_incremental_insert_overwrite_build_sql (macros\materializations\incremental_strategy\insert_overwrite.sql)
+  > called by macro bq_generate_incremental_build_sql (macros\materializations\incremental.sql)
+  > called by macro materialization_incremental_bigquery (macros\materializations\incremental.sql)
+  > called by model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+[0m19:15:54.053331 [info ] [MainThread]: 
+[0m19:15:54.068955 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:15:54.068955 [debug] [MainThread]: Command `dbt run` failed at 19:15:54.068955 after 9.54 seconds
+[0m19:15:54.068955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2C79E570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2C79FDA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C2D59CCB0>]}
+[0m19:15:54.068955 [debug] [MainThread]: Flushing usage events
+[0m19:19:23.505982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E6CA4D310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E6C349130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E6C460770>]}
+
+
+============================== 19:19:23.505982 | 8a592f7a-63b5-4321-b892-f6937dd6d5e5 ==============================
+[0m19:19:23.505982 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:19:23.505982 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run -s sales_items.sql', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:19:27.720035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E75664950>]}
+[0m19:19:27.802201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E693A4740>]}
+[0m19:19:27.802201 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:19:27.817852 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:19:28.250319 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:19:28.250319 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:19:28.604609 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:19:28.635877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E77C17170>]}
+[0m19:19:28.805203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E778D6300>]}
+[0m19:19:28.820846 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:19:28.820846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E77AA24E0>]}
+[0m19:19:28.820846 [info ] [MainThread]: 
+[0m19:19:28.820846 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:19:28.820846 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:19:28.820846 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:19:31.729208 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_hub'
+[0m19:19:31.729208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:19:31.891415 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_hub, now list_dataengineerproject-439609_dp_dataproducts)
+[0m19:19:31.891415 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:19:32.013639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E77B5AA20>]}
+[0m19:19:32.013639 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:19:32.013639 [info ] [MainThread]: 
+[0m19:19:32.013639 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:19:32.013639 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:19:32.013639 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:19:32.013639 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:19:32.129617 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:19:32.129617 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:19:32.192125 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:19:32.392369 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:19:32.392369 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+
+
+-- Condition pour ne traiter que les nouvelles lignes ou celles qui ont changé
+WHERE s.sales_datetime > (SELECT MAX(sales_datetime) FROM `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`)
+
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:19:32.546191 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:d33d0d63-9e78-417e-aae6-c521971c10a9&page=queryresults
+[0m19:19:33.232920 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/d33d0d63-9e78-417e-aae6-c521971c10a9?maxResults=0&location=europe-west9&prettyPrint=false: Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]')
+[0m19:19:33.665759 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:fabf5286-20ee-482b-9863-680b3dfa8a44&page=queryresults
+[0m19:19:34.337324 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:fabf5286-20ee-482b-9863-680b3dfa8a44&page=queryresults
+[0m19:19:34.368194 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:19:34.368194 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a592f7a-63b5-4321-b892-f6937dd6d5e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E77AA2ED0>]}
+[0m19:19:34.368194 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 2.35s]
+[0m19:19:34.368194 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:19:34.368194 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:19:34.368194 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:19:34.368194 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_dataproducts' was properly closed.
+[0m19:19:34.368194 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:19:34.368194 [info ] [MainThread]: 
+[0m19:19:34.368194 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 5.55 seconds (5.55s).
+[0m19:19:34.383823 [debug] [MainThread]: Command end result
+[0m19:19:34.421593 [info ] [MainThread]: 
+[0m19:19:34.421593 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:19:34.421593 [info ] [MainThread]: 
+[0m19:19:34.421593 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:19:34.421593 [info ] [MainThread]: 
+[0m19:19:34.421593 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:19:34.437238 [debug] [MainThread]: Command `dbt run` failed at 19:19:34.437238 after 11.23 seconds
+[0m19:19:34.437238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E6BAE1670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E7791DA30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E77782690>]}
+[0m19:19:34.437238 [debug] [MainThread]: Flushing usage events
+[0m19:20:43.415278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F908397830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90A32EB40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90A563E30>]}
+
+
+============================== 19:20:43.415278 | 36fa513e-3b21-43f2-b45f-ea7ff0480102 ==============================
+[0m19:20:43.415278 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:20:43.415278 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s sales_items.sql', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:46.930463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F913F17800>]}
+[0m19:20:47.024295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F91560C080>]}
+[0m19:20:47.024295 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:20:47.030312 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:20:47.478550 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:20:47.478550 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:20:47.832011 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:20:47.847660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9140630E0>]}
+[0m19:20:48.010234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F915A68FB0>]}
+[0m19:20:48.010234 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:20:48.010234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90AE24F20>]}
+[0m19:20:48.010234 [info ] [MainThread]: 
+[0m19:20:48.010234 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:20:48.025798 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:20:48.025798 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:20:50.571530 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_hub'
+[0m19:20:50.571530 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:20:50.740690 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_hub, now list_dataengineerproject-439609_dp_dataproducts)
+[0m19:20:50.740690 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:20:50.856852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F915A94D70>]}
+[0m19:20:50.856852 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:20:50.856852 [info ] [MainThread]: 
+[0m19:20:50.871861 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:20:50.871861 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:20:50.871861 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:20:50.871861 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:20:50.956602 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:20:50.956602 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:20:51.019125 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:20:51.219433 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:20:51.219433 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<datetime>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by datetime_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+
+
+-- Condition pour ne traiter que les nouvelles lignes ou celles qui ont changé
+WHERE s.sales_datetime > (SELECT MAX(sales_datetime) FROM `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`)
+
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct datetime_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and datetime_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:20:51.389458 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:0e8f724e-a402-4585-825d-af748dcaab71&page=queryresults
+[0m19:20:52.061380 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/0e8f724e-a402-4585-825d-af748dcaab71?maxResults=0&location=europe-west9&prettyPrint=false: Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]')
+[0m19:20:53.149417 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:fcf54578-329c-4dbe-bd00-17ba94b33114&page=queryresults
+[0m19:20:53.798637 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:fcf54578-329c-4dbe-bd00-17ba94b33114&page=queryresults
+[0m19:20:53.829924 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:20:53.829924 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36fa513e-3b21-43f2-b45f-ea7ff0480102', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90A563950>]}
+[0m19:20:53.829924 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 2.96s]
+[0m19:20:53.845522 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:20:53.845522 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:20:53.845522 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:20:53.845522 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_dataproducts' was properly closed.
+[0m19:20:53.852036 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:20:53.852036 [info ] [MainThread]: 
+[0m19:20:53.852036 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 5.84 seconds (5.84s).
+[0m19:20:53.852036 [debug] [MainThread]: Command end result
+[0m19:20:53.898971 [info ] [MainThread]: 
+[0m19:20:53.898971 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:20:53.898971 [info ] [MainThread]: 
+[0m19:20:53.898971 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: No matching signature for operator > for argument types: TIMESTAMP, DATETIME. Supported signature: ANY > ANY at [41:7]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:20:53.898971 [info ] [MainThread]: 
+[0m19:20:53.898971 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:20:53.914561 [debug] [MainThread]: Command `dbt run` failed at 19:20:53.914561 after 10.86 seconds
+[0m19:20:53.914561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90AB4F2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F90A98CE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F915AB1100>]}
+[0m19:20:53.914561 [debug] [MainThread]: Flushing usage events
+[0m19:22:53.067979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB018A1C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB7EE57920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB7F462330>]}
+
+
+============================== 19:22:53.083609 | 4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a ==============================
+[0m19:22:53.083609 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:22:53.083609 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s sales_items.sql', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:22:56.931593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0ACFC4A0>]}
+[0m19:22:57.021133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C2AFA10>]}
+[0m19:22:57.023210 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:22:57.031406 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:22:57.404798 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:22:57.404798 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:22:57.745054 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:22:57.755095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C8E7260>]}
+[0m19:22:57.917910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C5FB830>]}
+[0m19:22:57.917910 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:22:57.917910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C81CE60>]}
+[0m19:22:57.933539 [info ] [MainThread]: 
+[0m19:22:57.933539 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:22:57.933539 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:22:57.933539 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:00.903167 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_dataproducts'
+[0m19:23:00.903167 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:23:01.025605 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m19:23:01.025605 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:23:01.205128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C65AC90>]}
+[0m19:23:01.210639 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:23:01.210639 [info ] [MainThread]: 
+[0m19:23:01.210639 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:23:01.210639 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:23:01.210639 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:23:01.210639 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:23:01.310940 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:23:01.310940 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:23:01.373478 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:23:01.612081 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:23:01.612081 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+   
+      -- generated script to merge partitions into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      declare dbt_partitions_for_replacement array<timestamp>;
+
+      
+      
+       -- 1. create a temp table with model data
+        
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+
+
+-- Condition pour ne traiter que les nouvelles lignes ou celles qui ont changé
+WHERE s.sales_datetime > CAST((SELECT MAX(sales_datetime) FROM `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`) AS TIMESTAMP)
+
+    );
+  
+      -- 2. define partitions to update
+      set (dbt_partitions_for_replacement) = (
+          select as struct
+              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      );
+
+      -- 3. run the merge statement
+      
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (
+        select
+        * from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+      ) as DBT_INTERNAL_SOURCE
+        on FALSE
+
+    when not matched by source
+         and timestamp_trunc(DBT_INTERNAL_DEST.sales_datetime, day) in unnest(dbt_partitions_for_replacement) 
+        then delete
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+;
+
+      -- 4. clean up the temp table
+      drop table if exists `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+
+  
+
+
+  
+
+    
+[0m19:23:01.760542 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:77fd7b5f-dee3-48a0-8ee5-7d618f2a7a07&page=queryresults
+[0m19:23:04.678122 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('GET https://bigquery.googleapis.com/bigquery/v2/projects/dataengineerproject-439609/queries/77fd7b5f-dee3-48a0-8ee5-7d618f2a7a07?maxResults=0&location=europe-west9&prettyPrint=false: Query error: Cannot coerce expression (\n          select as struct\n              -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null\n              array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)\n          from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`\n      ) to type STRUCT<ARRAY<TIMESTAMP>> at [46:46]')
+[0m19:23:05.602039 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:7ad8af28-1db6-48f9-b64c-e2291cf87c3e&page=queryresults
+[0m19:23:08.784892 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:7ad8af28-1db6-48f9-b64c-e2291cf87c3e&page=queryresults
+[0m19:23:08.831716 [debug] [Thread-1 (]: Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [46:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:23:08.831716 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4fb1edbc-3da1-44c7-a0b7-6f6d93b3db3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB010F3AA0>]}
+[0m19:23:08.838271 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model dp_dataproducts.sales_items ........ [[31mERROR[0m in 7.62s]
+[0m19:23:08.840294 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:23:08.840294 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:23:08.840294 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:23:08.840294 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m19:23:08.840294 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:23:08.840294 [info ] [MainThread]: 
+[0m19:23:08.848487 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 10.91 seconds (10.91s).
+[0m19:23:08.850526 [debug] [MainThread]: Command end result
+[0m19:23:08.901549 [info ] [MainThread]: 
+[0m19:23:08.901549 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m19:23:08.901549 [info ] [MainThread]: 
+[0m19:23:08.901549 [error] [MainThread]:   Database Error in model sales_items (dbt_data_pipeline/models\dataproducts\sales_items.sql)
+  Query error: Cannot coerce expression (
+            select as struct
+                -- IGNORE NULLS: this needs to be aligned to _dbt_max_partition, which ignores null
+                array_agg(distinct timestamp_trunc(sales_datetime, day) IGNORE NULLS)
+            from `dataengineerproject-439609`.`dp_dataproducts`.`sales_items__dbt_tmp`
+        ) to type STRUCT<ARRAY<TIMESTAMP>> at [46:46]
+  compiled code at target\run\dbt_data_pipeline\dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:23:08.901549 [info ] [MainThread]: 
+[0m19:23:08.909685 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m19:23:08.911714 [debug] [MainThread]: Command `dbt run` failed at 19:23:08.911714 after 16.11 seconds
+[0m19:23:08.911714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0155B0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0155BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AB0C3AB9B0>]}
+[0m19:23:08.911714 [debug] [MainThread]: Flushing usage events
+[0m19:26:35.325674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF27659A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF2A102F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF3070F20>]}
+
+
+============================== 19:26:35.325674 | aedc885c-5b2e-42b5-9a4b-7355717d668c ==============================
+[0m19:26:35.325674 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:26:35.341358 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run -s sales_items.sql', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:26:39.393731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFDE31DC0>]}
+[0m19:26:39.472543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF27659A0>]}
+[0m19:26:39.478076 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:26:39.478076 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:26:39.910676 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:26:39.910676 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:26:40.211583 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:26:40.227212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFE297050>]}
+[0m19:26:40.427899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFDFAB500>]}
+[0m19:26:40.427899 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:26:40.427899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFE1C94F0>]}
+[0m19:26:40.443481 [info ] [MainThread]: 
+[0m19:26:40.443481 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:26:40.443481 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:26:40.443481 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:26:43.671436 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_hub'
+[0m19:26:43.671436 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:26:43.834352 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_hub, now list_dataengineerproject-439609_dp_dataproducts)
+[0m19:26:43.849981 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:26:43.957455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFE00A090>]}
+[0m19:26:43.957455 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:26:43.957455 [info ] [MainThread]: 
+[0m19:26:43.973092 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:26:43.973092 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:26:43.973092 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m19:26:43.973092 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:26:44.073537 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:26:44.073537 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:26:44.136046 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:26:44.305034 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:26:44.305034 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (-- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+
+--
+---- Condition pour ne traiter que les nouvelles lignes ou celles qui ont changé
+--WHERE s.sales_datetime > CAST((SELECT MAX(sales_datetime) FROM `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`) AS TIMESTAMP)
+--
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.pk = DBT_INTERNAL_DEST.pk
+            )
+
+    
+    when matched then update set
+        `pk` = DBT_INTERNAL_SOURCE.`pk`,`sales_datetime` = DBT_INTERNAL_SOURCE.`sales_datetime`,`item_amount` = DBT_INTERNAL_SOURCE.`item_amount`,`product_sku` = DBT_INTERNAL_SOURCE.`product_sku`,`item_quantity` = DBT_INTERNAL_SOURCE.`item_quantity`,`product_description` = DBT_INTERNAL_SOURCE.`product_description`,`discount_perc` = DBT_INTERNAL_SOURCE.`discount_perc`
+    
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+
+    
+[0m19:26:44.893548 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:4e5f2b0c-8f18-4838-8ff0-a1d77703ba72&page=queryresults
+[0m19:26:46.779182 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aedc885c-5b2e-42b5-9a4b-7355717d668c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFE28D580>]}
+[0m19:26:46.779182 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model dp_dataproducts.sales_items ............ [[32mMERGE (2.0 rows, 2.3 KiB processed)[0m in 2.81s]
+[0m19:26:46.779182 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:26:46.794769 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:26:46.794769 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:26:46.794769 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_dataproducts' was properly closed.
+[0m19:26:46.794769 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:26:46.794769 [info ] [MainThread]: 
+[0m19:26:46.794769 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 6.35 seconds (6.35s).
+[0m19:26:46.794769 [debug] [MainThread]: Command end result
+[0m19:26:46.857277 [info ] [MainThread]: 
+[0m19:26:46.857277 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:26:46.857277 [info ] [MainThread]: 
+[0m19:26:46.863793 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m19:26:46.863793 [debug] [MainThread]: Command `dbt run` succeeded at 19:26:46.863793 after 12.01 seconds
+[0m19:26:46.863793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF2559B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAF25590D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAFD794DA0>]}
+[0m19:26:46.863793 [debug] [MainThread]: Flushing usage events
+[0m19:29:49.077757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B975F96060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97857B0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B975D50EC0>]}
+
+
+============================== 19:29:49.091753 | 1006b1f0-c731-45be-8b39-b3e7d6c86770 ==============================
+[0m19:29:49.091753 [info ] [MainThread]: Running with dbt=1.8.7
+[0m19:29:49.094756 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:/Users/lenovo/.dbt', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir C:/Users/lenovo/.dbt', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:29:55.112755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B977D8D0D0>]}
+[0m19:29:55.233755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9043213D0>]}
+[0m19:29:55.235753 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m19:29:55.259756 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m19:29:55.844754 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:29:55.845755 [debug] [MainThread]: Partial parsing: updated file: dbt_data_pipeline://dbt_data_pipeline/models\dataproducts\sales_items.sql
+[0m19:29:56.401759 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m19:29:56.428758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90476EB10>]}
+[0m19:29:56.708756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9047481A0>]}
+[0m19:29:56.710760 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m19:29:56.712758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9045E9B50>]}
+[0m19:29:56.728756 [info ] [MainThread]: 
+[0m19:29:56.731755 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m19:29:56.739802 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m19:29:56.741755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:30:00.623755 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:00.840756 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_hub'
+[0m19:30:00.842755 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:30:01.016777 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_hub, now list_dataengineerproject-439609_dp_dataproducts)
+[0m19:30:01.018756 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:30:01.192756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B976315D60>]}
+[0m19:30:01.193755 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:30:01.197756 [info ] [MainThread]: 
+[0m19:30:01.208757 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.customers_staging
+[0m19:30:01.210757 [info ] [Thread-1 (]: 1 of 4 START sql view model dp_hub.customers_staging ........................... [RUN]
+[0m19:30:01.212756 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.customers_staging'
+[0m19:30:01.214756 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.customers_staging
+[0m19:30:01.238756 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.customers_staging"
+[0m19:30:01.243758 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.customers_staging
+[0m19:30:01.460756 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.customers_staging"
+[0m19:30:01.465755 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:30:01.467755 [debug] [Thread-1 (]: On model.dbt_data_pipeline.customers_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.customers_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`customers_staging`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH standardized_customers AS (
+    SELECT
+        *,
+        -- Normalisation des numéros de téléphone
+        ARRAY(
+            SELECT
+                CASE
+                    WHEN REGEXP_CONTAINS(phone_number, r'^\+33') THEN phone_number
+                    WHEN REGEXP_CONTAINS(phone_number, r'^0') THEN '+33' || SUBSTR(REGEXP_REPLACE(phone_number, r'\D', ''), 2)  -- Remplacer 0 par +33
+                    ELSE phone_number  -- Pour tout autre format, garder tel quel (potentiellement à adapter pour d'autres cas)
+                END AS standardized_phone_number
+            FROM UNNEST(phone_numbers) AS phone_number
+        ) AS standardized_phone_numbers,
+
+        -- Normalisation des adresses e-mail (en minuscules pour consistance)
+        ARRAY(
+            SELECT LOWER(email)
+            FROM UNNEST(emails) AS email
+        ) AS standardized_emails
+    FROM `dataengineerproject-439609`.`dp_lake`.`customers_normalized`
+),
+
+ranked_customers AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY customer_id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM standardized_customers
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    customer_id,
+    standardized_emails AS emails,
+    standardized_phone_numbers AS phone_numbers
+
+FROM
+    ranked_customers
+WHERE
+    row_num = 1;
+
+
+[0m19:30:01.731756 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:5e31cf42-2f8c-4d87-8a3b-bd07f93b8506&page=queryresults
+[0m19:30:02.003760 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B978666CC0>]}
+[0m19:30:02.006759 [info ] [Thread-1 (]: 1 of 4 OK created sql view model dp_hub.customers_staging ...................... [[32mCREATE VIEW (0 processed)[0m in 0.79s]
+[0m19:30:02.009757 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.customers_staging
+[0m19:30:02.011757 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.products_staging
+[0m19:30:02.013757 [info ] [Thread-1 (]: 2 of 4 START sql view model dp_hub.products_staging ............................ [RUN]
+[0m19:30:02.017757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.customers_staging, now model.dbt_data_pipeline.products_staging)
+[0m19:30:02.021758 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.products_staging
+[0m19:30:02.031755 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.products_staging"
+[0m19:30:02.039757 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.products_staging
+[0m19:30:02.046753 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.products_staging"
+[0m19:30:02.049756 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:30:02.054756 [debug] [Thread-1 (]: On model.dbt_data_pipeline.products_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.products_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`products_staging`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH ranked_products AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY product_sku
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`products_normalized`
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    product_sku,
+    unit_amount,
+    description AS product_description,
+    supplier
+
+FROM
+    ranked_products
+WHERE
+    row_num = 1;
+
+
+[0m19:30:02.319760 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:24fd4c51-2077-4bf1-bba5-fa9d763f3694&page=queryresults
+[0m19:30:02.436760 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9045E9790>]}
+[0m19:30:02.439757 [info ] [Thread-1 (]: 2 of 4 OK created sql view model dp_hub.products_staging ....................... [[32mCREATE VIEW (0 processed)[0m in 0.42s]
+[0m19:30:02.446756 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.products_staging
+[0m19:30:02.448760 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_staging
+[0m19:30:02.450756 [info ] [Thread-1 (]: 3 of 4 START sql view model dp_hub.sales_staging ............................... [RUN]
+[0m19:30:02.463757 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.products_staging, now model.dbt_data_pipeline.sales_staging)
+[0m19:30:02.466760 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_staging
+[0m19:30:02.476760 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_staging"
+[0m19:30:02.481759 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_staging
+[0m19:30:02.490756 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_staging"
+[0m19:30:02.494756 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:30:02.496760 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_staging"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`sales_staging`
+  OPTIONS()
+  as -- Tag to indicate that this model is updated every hour
+
+
+WITH ranked_sales AS (
+    -- Assign a row number to each sale based on customer_id and timestamp, to keep the most recent entry
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`sales_normalized`
+),
+
+-- Filter to only include the most recent entry for each sale (i.e., row_num = 1)
+deduplicated_sales AS (
+    SELECT *
+    FROM ranked_sales
+    WHERE row_num = 1
+)
+
+-- Flatten items array for each sale and select relevant fields
+SELECT
+    ds._dp_ingestion_timestamp,
+    ds.id,
+    ds.datetime AS sales_datetime,
+    ds.customer_id,
+    ds.total_amount,
+    item.amount AS item_amount,
+    item.quantity AS item_quantity,
+    item.product_sku AS item_product_sku
+FROM
+    deduplicated_sales AS ds,
+    UNNEST(ds.items) AS item;
+
+
+[0m19:30:02.746754 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:aff1d91b-c087-45b0-9cce-b5b770cd1da2&page=queryresults
+[0m19:30:02.997757 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9043FC080>]}
+[0m19:30:02.999755 [info ] [Thread-1 (]: 3 of 4 OK created sql view model dp_hub.sales_staging .......................... [[32mCREATE VIEW (0 processed)[0m in 0.53s]
+[0m19:30:03.028758 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_staging
+[0m19:30:03.035757 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m19:30:03.038757 [info ] [Thread-1 (]: 4 of 4 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m19:30:03.045758 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.sales_staging, now model.dbt_data_pipeline.sales_items)
+[0m19:30:03.047756 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m19:30:03.153756 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m19:30:03.175772 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m19:30:03.954757 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:30:04.404756 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m19:30:04.410756 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+            
+        
+    
+
+    
+
+    merge into `dataengineerproject-439609`.`dp_dataproducts`.`sales_items` as DBT_INTERNAL_DEST
+        using (-- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                DBT_INTERNAL_SOURCE.pk = DBT_INTERNAL_DEST.pk
+            )
+
+    
+    when matched then update set
+        `pk` = DBT_INTERNAL_SOURCE.`pk`,`sales_datetime` = DBT_INTERNAL_SOURCE.`sales_datetime`,`item_amount` = DBT_INTERNAL_SOURCE.`item_amount`,`product_sku` = DBT_INTERNAL_SOURCE.`product_sku`,`item_quantity` = DBT_INTERNAL_SOURCE.`item_quantity`,`product_description` = DBT_INTERNAL_SOURCE.`product_description`,`discount_perc` = DBT_INTERNAL_SOURCE.`discount_perc`
+    
+
+    when not matched then insert
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+    values
+        (`pk`, `sales_datetime`, `item_amount`, `product_sku`, `item_quantity`, `product_description`, `discount_perc`)
+
+
+    
+[0m19:30:05.425765 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:2f30a800-6dbf-4ea6-8805-35c09cc866ee&page=queryresults
+[0m19:30:07.545950 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1006b1f0-c731-45be-8b39-b3e7d6c86770', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9787BF980>]}
+[0m19:30:07.547953 [info ] [Thread-1 (]: 4 of 4 OK created sql incremental model dp_dataproducts.sales_items ............ [[32mMERGE (2.0 rows, 3.2 KiB processed)[0m in 4.50s]
+[0m19:30:07.549952 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m19:30:07.551947 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:30:07.552951 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m19:30:07.553950 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_dataproducts' was properly closed.
+[0m19:30:07.554951 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m19:30:07.555950 [info ] [MainThread]: 
+[0m19:30:07.557949 [info ] [MainThread]: Finished running 3 view models, 1 incremental model in 0 hours 0 minutes and 10.83 seconds (10.83s).
+[0m19:30:07.561949 [debug] [MainThread]: Command end result
+[0m19:30:07.619955 [info ] [MainThread]: 
+[0m19:30:07.621956 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:30:07.624956 [info ] [MainThread]: 
+[0m19:30:07.626958 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m19:30:07.630955 [debug] [MainThread]: Command `dbt run` succeeded at 19:30:07.629954 after 19.02 seconds
+[0m19:30:07.631953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B975F96060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97788C560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9040343B0>]}
+[0m19:30:07.633957 [debug] [MainThread]: Flushing usage events

@@ -2,7 +2,7 @@
   
     
 
-    create or replace table `dataengineerproject-439609`.`dp_lake`.`my_first_dbt_model`
+    create or replace table `dataengineerproject-439609`.`dp`.`my_first_dbt_model`
       
     
     
