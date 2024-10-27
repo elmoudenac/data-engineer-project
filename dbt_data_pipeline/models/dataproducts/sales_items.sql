@@ -21,6 +21,6 @@
         s.item_quantity,  -- Quantité d'items vendus
         p.product_description,  -- Description du produit
         ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
-    FROM {{ ref('sales_staging') }} AS s
-    LEFT JOIN {{ ref('products_staging') }} AS p
+    FROM {{ ref('sales_processed') }} AS s
+    LEFT JOIN {{ ref('products_processed') }} AS p
     ON s.item_product_sku = p.product_sku  -- Associer la description des produits

@@ -19,10 +19,10 @@ clean-targets:
 models:
   dbt_data_pipeline:
     datalake:
-      +schema: dp_lake    # Crée des tables dans le dataset dp_lake pour la couche lake
+      +schema: lake    # Crée des tables dans le dataset dp_lake pour la couche lake
       +materialized: table
-    datahub:
-      +schema: hub     # Crée des tables dans le dataset dp_hub pour la couche hub
+    dataprocessing:
+      +schema: processing     # Crée des tables dans le dataset dp_hub pour la couche hub
       +materialized: view
     dataproducts:
       +schema: dataproducts  # Crée des tables dans le dataset dp_dataproducts pour la couche dataproducts

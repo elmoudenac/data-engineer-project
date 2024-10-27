@@ -15,7 +15,7 @@ WITH ranked_sales AS (
             PARTITION BY id
             ORDER BY _dp_ingestion_timestamp DESC
         ) AS row_num
-    FROM {{ source('dp_lake', 'sales_normalized') }}
+    FROM {{ source('dp_lake', 'sales_raw') }}
 ),
 
 -- Filter to only include the most recent entry for each sale (i.e., row_num = 1)

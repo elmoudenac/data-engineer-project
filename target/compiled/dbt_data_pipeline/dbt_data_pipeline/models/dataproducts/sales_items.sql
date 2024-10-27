@@ -10,6 +10,6 @@
         s.item_quantity,  -- Quantité d'items vendus
         p.product_description,  -- Description du produit
         ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
-    FROM `dataengineerproject-439609`.`dp_hub`.`sales_staging` AS s
-    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_staging` AS p
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_processed` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_processed` AS p
     ON s.item_product_sku = p.product_sku  -- Associer la description des produits

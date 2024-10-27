@@ -26,7 +26,7 @@ WITH standardized_customers AS (
             SELECT LOWER(email)
             FROM UNNEST(emails) AS email
         ) AS standardized_emails
-    FROM {{ source('dp_lake', 'customers_normalized') }}
+    FROM {{ source('dp_lake', 'customers_raw') }}
 ),
 
 ranked_customers AS (

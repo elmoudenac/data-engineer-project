@@ -5,6 +5,6 @@ sources:
     database: dataengineerproject-439609  # Nom de ton projet GCP
     schema: dp_lake                       # Dataset BigQuery (couche Lake)
     tables:
-      - name: customers_normalized        # Nom de la table source
-      - name: products_normalized
-      - name: sales_normalized
+      - name: customers_raw       # Nom de la table source
+      - name: products_raw
+      - name: sales_raw

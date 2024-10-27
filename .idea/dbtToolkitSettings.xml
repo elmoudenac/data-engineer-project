@@ -8,7 +8,7 @@
     </option>
     <option name="dbtModelPaths">
       <list>
-        <option value="models" />
+        <option value="dbt_data_pipeline/models" />
       </list>
     </option>
     <option name="dbtProject">
@@ -70,20 +70,20 @@
         </entry>
       </map>
     </option>
-    <option name="dbtProjectName" value="my_project" />
-    <option name="dbtProjectsDir" value="$PROJECT_DIR$/my_project" />
+    <option name="dbtProjectName" value="dbt_data_pipeline" />
+    <option name="dbtProjectsDir" value="$PROJECT_DIR$" />
     <option name="dbtSeedPaths">
       <list>
         <option value="seeds" />
       </list>
     </option>
-    <option name="dbtTargetDir" value="$PROJECT_DIR$/my_project/target" />
+    <option name="dbtTargetDir" value="$PROJECT_DIR$/target" />
     <option name="dbtTestPaths">
       <list>
         <option value="tests" />
       </list>
     </option>
-    <option name="settingsDbtProjectDir" value="$PROJECT_DIR$/my_project" />
-    <option name="settingsDbtTargetDir" value="$PROJECT_DIR$/my_project/target" />
+    <option name="settingsDbtProjectDir" value="$PROJECT_DIR$" />
+    <option name="settingsDbtTargetDir" value="$PROJECT_DIR$/target" />
   </component>
 </project>

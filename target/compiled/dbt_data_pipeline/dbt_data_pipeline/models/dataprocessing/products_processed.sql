@@ -1,11 +1,5 @@
 -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
-{{
-    config(
-        materialized='view',
-        schema='hub',
-        tags=["hourly"]
-    )
-}}
+
 
 WITH ranked_products AS (
     SELECT
@@ -14,7 +8,7 @@ WITH ranked_products AS (
             PARTITION BY product_sku
             ORDER BY _dp_ingestion_timestamp DESC
         ) AS row_num
-    FROM {{ source('dp_lake', 'products_normalized') }}
+    FROM `dataengineerproject-439609`.`dp_lake`.`products_raw`
 )
 
 -- Sélectionner uniquement les enregistrements uniques les plus récents

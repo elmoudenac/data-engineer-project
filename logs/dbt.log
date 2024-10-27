@@ -7269,3 +7269,340 @@ FROM
 [0m19:30:07.630955 [debug] [MainThread]: Command `dbt run` succeeded at 19:30:07.629954 after 19.02 seconds
 [0m19:30:07.631953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B975F96060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B97788C560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B9040343B0>]}
 [0m19:30:07.633957 [debug] [MainThread]: Flushing usage events
+[0m00:13:52.183079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0B7A77800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BB1E4EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BB1E7A70>]}
+
+
+============================== 00:13:52.202078 | 81bbbbd1-7cbd-40e0-aed2-0d242e0ac156 ==============================
+[0m00:13:52.202078 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:13:52.208080 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ls -s dataprocessing', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:13:57.034205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0C3DFBB30>]}
+[0m00:13:57.132207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0C41ED4F0>]}
+[0m00:13:57.134210 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m00:13:57.150208 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:13:57.263212 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m00:13:57.266215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BAA865D0>]}
+[0m00:13:59.533255 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m00:13:59.547255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0C60D5A00>]}
+[0m00:14:00.204614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0C62DF410>]}
+[0m00:14:00.206613 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m00:14:00.209616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '81bbbbd1-7cbd-40e0-aed2-0d242e0ac156', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0C60C4620>]}
+[0m00:14:00.213616 [debug] [MainThread]: Command `dbt ls` succeeded at 00:14:00.212614 after 8.61 seconds
+[0m00:14:00.214614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BB1A0C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BB1A0170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BB09B560>]}
+[0m00:14:00.215616 [debug] [MainThread]: Flushing usage events
+[0m00:14:42.675502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184D88FE570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184D7BC4290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184DA95F4A0>]}
+
+
+============================== 00:14:42.684460 | f49b908d-a0f4-4a78-bd2b-d8d4232062ff ==============================
+[0m00:14:42.684460 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:14:42.686463 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ls -s models', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m00:14:46.311812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f49b908d-a0f4-4a78-bd2b-d8d4232062ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184DB355340>]}
+[0m00:14:46.381811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f49b908d-a0f4-4a78-bd2b-d8d4232062ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E62D05F0>]}
+[0m00:14:46.383849 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m00:14:46.397505 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:14:46.803639 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:14:46.804639 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:14:46.811644 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m00:14:46.853641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f49b908d-a0f4-4a78-bd2b-d8d4232062ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E646B3B0>]}
+[0m00:14:47.045647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f49b908d-a0f4-4a78-bd2b-d8d4232062ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E66BF710>]}
+[0m00:14:47.046646 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m00:14:47.048647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f49b908d-a0f4-4a78-bd2b-d8d4232062ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184E6391190>]}
+[0m00:14:47.050644 [warn ] [MainThread]: The selection criterion 'models' does not match any enabled nodes
+[0m00:14:47.051646 [warn ] [MainThread]: No nodes selected!
+[0m00:14:47.054644 [debug] [MainThread]: Command `dbt ls` succeeded at 00:14:47.053645 after 4.63 seconds
+[0m00:14:47.054644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184DAA238F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184DAC70920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184DA984620>]}
+[0m00:14:47.055644 [debug] [MainThread]: Flushing usage events
+[0m00:15:21.408217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5020A1D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E502044410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5020479E0>]}
+
+
+============================== 00:15:21.417215 | 3a79510c-5132-4be0-ab88-69a17fcd0a67 ==============================
+[0m00:15:21.417215 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:15:21.418220 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run -s dataprocessing --full-refresh', 'send_anonymous_usage_stats': 'True'}
+[0m00:15:25.645045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50B0FD700>]}
+[0m00:15:25.720051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E57F655940>]}
+[0m00:15:25.722053 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m00:15:25.737094 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:15:26.195097 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:15:26.196093 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:15:26.202094 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m00:15:26.240093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50CCE4F20>]}
+[0m00:15:26.418760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50CFDDE50>]}
+[0m00:15:26.419761 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m00:15:26.420761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50CFD1B20>]}
+[0m00:15:26.423761 [info ] [MainThread]: 
+[0m00:15:26.424761 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:15:26.430761 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m00:15:26.431764 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:15:29.736833 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_dataproducts'
+[0m00:15:29.737834 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:15:29.856738 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_dataproducts, now list_dataengineerproject-439609_dp_hub)
+[0m00:15:29.859739 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:15:29.987164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50CDD5280>]}
+[0m00:15:29.988166 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:15:29.990167 [info ] [MainThread]: 
+[0m00:15:30.000167 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.customers_processed
+[0m00:15:30.002167 [info ] [Thread-1 (]: 1 of 3 START sql view model dp_hub.customers_processed ......................... [RUN]
+[0m00:15:30.005168 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.customers_processed'
+[0m00:15:30.006166 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.customers_processed
+[0m00:15:30.032167 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.customers_processed"
+[0m00:15:30.038165 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.customers_processed
+[0m00:15:30.096167 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.customers_processed"
+[0m00:15:30.102166 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:15:30.103167 [debug] [Thread-1 (]: On model.dbt_data_pipeline.customers_processed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.customers_processed"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`customers_processed`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH standardized_customers AS (
+    SELECT
+        *,
+        -- Normalisation des numéros de téléphone
+        ARRAY(
+            SELECT
+                CASE
+                    WHEN REGEXP_CONTAINS(phone_number, r'^\+33') THEN phone_number
+                    WHEN REGEXP_CONTAINS(phone_number, r'^0') THEN '+33' || SUBSTR(REGEXP_REPLACE(phone_number, r'\D', ''), 2)  -- Remplacer 0 par +33
+                    ELSE phone_number  -- Pour tout autre format, garder tel quel (potentiellement à adapter pour d'autres cas)
+                END AS standardized_phone_number
+            FROM UNNEST(phone_numbers) AS phone_number
+        ) AS standardized_phone_numbers,
+
+        -- Normalisation des adresses e-mail (en minuscules pour consistance)
+        ARRAY(
+            SELECT LOWER(email)
+            FROM UNNEST(emails) AS email
+        ) AS standardized_emails
+    FROM `dataengineerproject-439609`.`dp_lake`.`customers_raw`
+),
+
+ranked_customers AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY customer_id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM standardized_customers
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    customer_id,
+    standardized_emails AS emails,
+    standardized_phone_numbers AS phone_numbers
+
+FROM
+    ranked_customers
+WHERE
+    row_num = 1;
+
+
+[0m00:15:30.971488 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:62f40cea-0f29-4c67-bc86-f71f745a057e&page=queryresults
+[0m00:15:31.230843 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50B066AB0>]}
+[0m00:15:31.232843 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dp_hub.customers_processed .................... [[32mCREATE VIEW (0 processed)[0m in 1.22s]
+[0m00:15:31.235848 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.customers_processed
+[0m00:15:31.237843 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.products_processed
+[0m00:15:31.239846 [info ] [Thread-1 (]: 2 of 3 START sql view model dp_hub.products_processed .......................... [RUN]
+[0m00:15:31.241845 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.customers_processed, now model.dbt_data_pipeline.products_processed)
+[0m00:15:31.242844 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.products_processed
+[0m00:15:31.251844 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.products_processed"
+[0m00:15:31.256846 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.products_processed
+[0m00:15:31.266844 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.products_processed"
+[0m00:15:31.274847 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:15:31.276845 [debug] [Thread-1 (]: On model.dbt_data_pipeline.products_processed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.products_processed"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`products_processed`
+  OPTIONS()
+  as -- Tag pour indiquer que ce modèle est mis à jour toutes les heures
+
+
+WITH ranked_products AS (
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY product_sku
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`products_raw`
+)
+
+-- Sélectionner uniquement les enregistrements uniques les plus récents
+SELECT
+    _dp_ingestion_timestamp,
+    product_sku,
+    unit_amount,
+    description AS product_description,
+    supplier
+
+FROM
+    ranked_products
+WHERE
+    row_num = 1;
+
+
+[0m00:15:31.575849 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:755269e9-fcd9-4720-b4c3-d0ef4fd66b91&page=queryresults
+[0m00:15:31.783615 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50D0F1430>]}
+[0m00:15:31.784613 [info ] [Thread-1 (]: 2 of 3 OK created sql view model dp_hub.products_processed ..................... [[32mCREATE VIEW (0 processed)[0m in 0.54s]
+[0m00:15:31.786614 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.products_processed
+[0m00:15:31.787613 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_processed
+[0m00:15:31.788613 [info ] [Thread-1 (]: 3 of 3 START sql view model dp_hub.sales_processed ............................. [RUN]
+[0m00:15:31.789613 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_data_pipeline.products_processed, now model.dbt_data_pipeline.sales_processed)
+[0m00:15:31.790612 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_processed
+[0m00:15:31.796616 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_processed"
+[0m00:15:31.799707 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_processed
+[0m00:15:31.803708 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_processed"
+[0m00:15:31.805708 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:15:31.806734 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_processed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_processed"} */
+
+
+  create or replace view `dataengineerproject-439609`.`dp_hub`.`sales_processed`
+  OPTIONS()
+  as -- Tag to indicate that this model is updated every hour
+
+
+WITH ranked_sales AS (
+    -- Assign a row number to each sale based on customer_id and timestamp, to keep the most recent entry
+    SELECT
+        *,
+        ROW_NUMBER() OVER (
+            PARTITION BY id
+            ORDER BY _dp_ingestion_timestamp DESC
+        ) AS row_num
+    FROM `dataengineerproject-439609`.`dp_lake`.`sales_raw`
+),
+
+-- Filter to only include the most recent entry for each sale (i.e., row_num = 1)
+deduplicated_sales AS (
+    SELECT *
+    FROM ranked_sales
+    WHERE row_num = 1
+)
+
+-- Flatten items array for each sale and select relevant fields
+SELECT
+    ds._dp_ingestion_timestamp,
+    ds.id,
+    ds.datetime AS sales_datetime,
+    ds.customer_id,
+    ds.total_amount,
+    item.amount AS item_amount,
+    item.quantity AS item_quantity,
+    item.product_sku AS item_product_sku
+FROM
+    deduplicated_sales AS ds,
+    UNNEST(ds.items) AS item;
+
+
+[0m00:15:32.087758 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:7a132b17-c7a6-4bb2-be39-1b5e9b50f1ba&page=queryresults
+[0m00:15:32.298766 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3a79510c-5132-4be0-ab88-69a17fcd0a67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50D05E720>]}
+[0m00:15:32.299764 [info ] [Thread-1 (]: 3 of 3 OK created sql view model dp_hub.sales_processed ........................ [[32mCREATE VIEW (0 processed)[0m in 0.51s]
+[0m00:15:32.301763 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_processed
+[0m00:15:32.304763 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:15:32.304763 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m00:15:32.305762 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_hub' was properly closed.
+[0m00:15:32.306762 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_processed' was properly closed.
+[0m00:15:32.307764 [info ] [MainThread]: 
+[0m00:15:32.308763 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 5.88 seconds (5.88s).
+[0m00:15:32.311767 [debug] [MainThread]: Command end result
+[0m00:15:32.356768 [info ] [MainThread]: 
+[0m00:15:32.357768 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:15:32.359769 [info ] [MainThread]: 
+[0m00:15:32.361764 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m00:15:32.365764 [debug] [MainThread]: Command `dbt run` succeeded at 00:15:32.364765 after 11.39 seconds
+[0m00:15:32.366768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E502000BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50218AAB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E50218A630>]}
+[0m00:15:32.367767 [debug] [MainThread]: Flushing usage events
+[0m00:15:58.409056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014042F81C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140453D5130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140453D5220>]}
+
+
+============================== 00:15:58.419052 | 4298da34-6576-40d2-b532-819c48307362 ==============================
+[0m00:15:58.419052 [info ] [MainThread]: Running with dbt=1.8.7
+[0m00:15:58.421054 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\lenovo\\data-engineer-project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run -s sales_items.sql --full-refresh', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:16:03.486152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001404D1E53A0>]}
+[0m00:16:03.565148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001404E39C590>]}
+[0m00:16:03.568158 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m00:16:03.591171 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m00:16:04.056158 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:16:04.057158 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:16:04.068164 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_data_pipeline.datalake
+[0m00:16:04.111171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140500D7020>]}
+[0m00:16:04.322164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001404F7EAD50>]}
+[0m00:16:04.324166 [info ] [MainThread]: Found 4 models, 3 sources, 484 macros
+[0m00:16:04.325201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140502607A0>]}
+[0m00:16:04.330170 [info ] [MainThread]: 
+[0m00:16:04.335168 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m00:16:04.337164 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609'
+[0m00:16:04.338166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:16:07.553262 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dataengineerproject-439609_dp_hub'
+[0m00:16:07.554235 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:16:07.728102 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dataengineerproject-439609_dp_hub, now list_dataengineerproject-439609_dp_dataproducts)
+[0m00:16:07.730607 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:16:07.830860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001404F7EAD50>]}
+[0m00:16:07.834121 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:16:07.836090 [info ] [MainThread]: 
+[0m00:16:07.847089 [debug] [Thread-1 (]: Began running node model.dbt_data_pipeline.sales_items
+[0m00:16:07.848091 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dp_dataproducts.sales_items ................. [RUN]
+[0m00:16:07.849087 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.dbt_data_pipeline.sales_items'
+[0m00:16:07.850112 [debug] [Thread-1 (]: Began compiling node model.dbt_data_pipeline.sales_items
+[0m00:16:07.863165 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_data_pipeline.sales_items"
+[0m00:16:07.869120 [debug] [Thread-1 (]: Began executing node model.dbt_data_pipeline.sales_items
+[0m00:16:07.933121 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:16:08.116754 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_data_pipeline.sales_items"
+[0m00:16:08.121769 [debug] [Thread-1 (]: On model.dbt_data_pipeline.sales_items: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "dbt_data_pipeline", "target_name": "dev", "node_id": "model.dbt_data_pipeline.sales_items"} */
+
+  
+    
+
+    create or replace table `dataengineerproject-439609`.`dp_dataproducts`.`sales_items`
+      
+    partition by timestamp_trunc(sales_datetime, day)
+    
+
+    OPTIONS()
+    as (
+      -- Config pour indiquer le modèle incrémental
+
+
+-- Extraction des informations nécessaires pour chaque vente et chaque produit
+    SELECT
+        CONCAT(CAST(s.id AS STRING), '_', s.item_product_sku) AS pk,  -- Clé primaire unique pour chaque vente
+        safe_cast(s.sales_datetime AS datetime) AS sales_datetime,  -- Date de la vente
+        s.item_amount,  -- Montant total par produit et par vente
+        s.item_product_sku AS product_sku,  -- SKU du produit vendu
+        s.item_quantity,  -- Quantité d'items vendus
+        p.product_description,  -- Description du produit
+        ((p.unit_amount - s.item_amount) / p.unit_amount) * 100 AS discount_perc  -- Pourcentage de réduction
+    FROM `dataengineerproject-439609`.`dp_hub`.`sales_processed` AS s
+    LEFT JOIN `dataengineerproject-439609`.`dp_hub`.`products_processed` AS p
+    ON s.item_product_sku = p.product_sku  -- Associer la description des produits
+    );
+  
+[0m00:16:08.668818 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dataengineerproject-439609&j=bq:europe-west9:0881591d-6292-4ad4-8f64-0c532dda9efa&page=queryresults
+[0m00:16:10.407337 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4298da34-6576-40d2-b532-819c48307362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014044C97770>]}
+[0m00:16:10.408341 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model dp_dataproducts.sales_items ............ [[32mCREATE TABLE (2.0 rows, 222.0 Bytes processed)[0m in 2.56s]
+[0m00:16:10.410337 [debug] [Thread-1 (]: Finished running node model.dbt_data_pipeline.sales_items
+[0m00:16:10.412334 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:16:10.413335 [debug] [MainThread]: Connection 'list_dataengineerproject-439609' was properly closed.
+[0m00:16:10.414334 [debug] [MainThread]: Connection 'list_dataengineerproject-439609_dp_dataproducts' was properly closed.
+[0m00:16:10.415335 [debug] [MainThread]: Connection 'model.dbt_data_pipeline.sales_items' was properly closed.
+[0m00:16:10.416334 [info ] [MainThread]: 
+[0m00:16:10.417217 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 6.08 seconds (6.08s).
+[0m00:16:10.419207 [debug] [MainThread]: Command end result
+[0m00:16:10.457109 [info ] [MainThread]: 
+[0m00:16:10.459110 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:16:10.461110 [info ] [MainThread]: 
+[0m00:16:10.463110 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m00:16:10.465110 [debug] [MainThread]: Command `dbt run` succeeded at 00:16:10.465110 after 12.34 seconds
+[0m00:16:10.466110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014044B454F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001404FDFCCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140502522A0>]}
+[0m00:16:10.467959 [debug] [MainThread]: Flushing usage events
