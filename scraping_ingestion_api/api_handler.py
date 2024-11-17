@@ -1,5 +1,4 @@
 import os
-
 import requests
 # Code pour récupérer les données de l'API Stack Labs via les endpoints avec pagination
 api_key = os.getenv("API_KEY")
